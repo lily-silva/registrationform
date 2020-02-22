@@ -1,4 +1,13 @@
-body {
+.container-fluid {
+  height: 100%;
+}
+.container-fluid .row {
+  display: flex;
+  height: 100%;
+  border: 1px solid green;
+}
+.container-fluid .row .bck {
+  position: relative;
   background-image: url("../assets/bitmap.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -7,76 +16,11 @@ body {
   font-family: "Open Sans";
   color: #4a4a4a;
 }
-body .container {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .container .center {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 100%;
-  padding: 100px 20px 100px 20px;
-  border-radius: 10px;
-}
-body .container .center .newAccount {
-  font-size: 18px;
-}
-body .container .center .socialMedia {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body .container .center .socialMedia .bttS {
-  width: 50px;
-  height: 50px;
-  border: 0.5px solid rgba(159, 165, 177, 0.8);
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 12px;
-  color: #9f9ba7;
-  font-size: 23px;
-  text-decoration: none;
-}
-body .container .center .socialMedia .bttS:hover {
-  background-color: #fb125b;
-  color: white;
-}
-body .container .center .form p {
-  font-size: 14px;
-}
-body .container .center .form .input-group {
-  margin-bottom: 14px;
-}
-body .container .center .form .input-group .input-group-text {
-  min-width: 50px;
-  background: white;
-  border-right: none;
-  justify-content: center;
-}
-body .container .center .form .input-group input {
-  padding: 25px;
-  border-left: none;
-}
-body .container .center .form .btn {
-  width: 177px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: #fb125b;
-  color: White;
-  font-family: "Open Sans";
-  font-size: 12px;
-}
-body .container .center .login {
-  margin-top: 20px;
-}
-body .container .center .login a {
-  color: #fb125b;
-  text-decoration: none;
+.container-fluid .row .formBit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */

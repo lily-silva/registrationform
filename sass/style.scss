@@ -22,12 +22,16 @@ body {
         .center {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.6);
-            width: 100%;
+            width: 90%;
             padding: 100px 20px 100px 20px;
             border-radius: 10px;
 
+            @media (min-width: 640px) {
+                width: 60%;
+            }
+
             @media (min-width: 960px) {
-                background-color: black;
+                width: 40%;
             }
 
             .newAccount {
